@@ -1,0 +1,28 @@
+<title>動画見れる自作サイト</title>
+niconicoのリンクを入力して置き換えを押すとniconicoの動画が表示される。
+<form>
+<input type="text" id="myInput2">
+<button type="button" onclick="myFunction2()">動画検索</button>
+</form>
+<script>
+function myFunction2() {
+var UserInput2 = document.getElementById("myInput2").value;
+var UserInput2 = ("https://www.google.co.jp/search?q="+UserInput2+"&hl=ja&sxsrf=APwXEddqDJWhvjixeYaIWoRiWwbkVb4GIA:1686042674955&source=lnms&tbm=vid&sa=X&ved=2ahUKEwjL2921pq7_AhWQNN4KHeZNAnMQ_AUoAXoECAEQAw");
+window.open(UserInput2, '_blank')}
+</script><form>
+<input type="text" id="myInput">
+<button type="button" onclick="myFunction()">置き換え</button><button type="button" onclick="god()">新しいタブで表示</button>
+</form>
+<iframe src="https://m-39892622.hubspotpagebuilder.com/ja-jp/home" id="k" width="1280" height="720"></iframe>
+<script>
+function myFunction() {
+var UserInput = document.getElementById("myInput").value;
+var UserInput = UserInput.replace('www', 'embed');
+document.getElementById("k").src = UserInput;}
+</script>
+<script>
+function god(){
+var UserInput = document.getElementById("myInput").value;
+var UserInput = UserInput.replace('www', 'embed');
+window.open(UserInput, '_blank')}
+</script>
